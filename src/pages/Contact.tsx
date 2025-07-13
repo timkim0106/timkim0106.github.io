@@ -26,10 +26,10 @@ const Contact: React.FC = () => {
     setSubmitMessage('');
 
     try {
-      // Replace these with your actual EmailJS credentials
-      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
-      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
-      const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+      // EmailJS configuration - these are public keys safe for frontend use
+      const serviceId = 'service_ynobpc5';
+      const templateId = 'template_vijci9u';
+      const publicKey = '8yYHFj2w2jqcX7pX0';
 
       const templateParams = {
         from_name: formData.name,
