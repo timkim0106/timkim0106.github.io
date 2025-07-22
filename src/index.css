@@ -1,10 +1,62 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.nes-container {
+  background-color: #343a40 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.nes-container.with-title > .title {
+  background-color: #212529 !important;
+  color: #ffffff !important;
+}
+
+.nes-text.is-primary {
+  color: #66bb6a !important;
+}
+
+.nes-btn {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.nes-btn.is-primary {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.nes-btn.is-warning {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: #000000 !important;
+}
+
+.nes-btn.is-success {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.nes-input, .nes-textarea {
+  background-color: #495057 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.nes-input:focus, .nes-textarea:focus {
+  border-color: #007bff !important;
+}
+
+.nes-field label {
+  color: #ffffff !important;
+}
+
+.nes-list {
+  color: #ffffff !important;
 }
 
 code {
