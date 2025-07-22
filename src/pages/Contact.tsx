@@ -27,9 +27,9 @@ const Contact: React.FC = () => {
 
     try {
       // EmailJS configuration - these are public keys safe for frontend use
-      const serviceId = 'service_ynobpc5';
-      const templateId = 'template_vijci9u';
-      const publicKey = '8yYHFj2w2jqcX7pX0';
+      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID!;
+      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID!;
+      const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY!;
 
       const templateParams = {
         from_name: formData.name,

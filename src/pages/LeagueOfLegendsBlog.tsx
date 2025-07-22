@@ -2,17 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useBlogPosts } from '../hooks/useBlogPosts';
 import BlogEditor from '../components/BlogEditor';
-
-interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  date: string;
-  tags: string[];
-  category: 'general' | 'league-of-legends';
-  slug: string;
-}
+import { BlogPost } from '../types/blog';
 
 const LeagueOfLegendsBlog: React.FC = () => {
   const { getPostsByCategory, addPost, updatePost, deletePost } = useBlogPosts();

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useBlogPosts } from '../hooks/useBlogPosts';
 import BlogPost from '../components/BlogPost';
 import BlogEditor from '../components/BlogEditor';

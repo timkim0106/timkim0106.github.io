@@ -1,15 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  date: string;
-  tags: string[];
-  category: 'general' | 'league-of-legends';
-  slug: string;
-}
+import { BlogPost } from '../types/blog';
 
 interface BlogEditorProps {
   post?: BlogPost;

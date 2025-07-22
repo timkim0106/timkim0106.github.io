@@ -1,20 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { marked } from 'marked';
-
-interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  date: string;
-  tags: string[];
-  category: 'general' | 'league-of-legends';
-  slug: string;
-}
+import { BlogPost as BlogPostType } from '../types/blog';
 
 interface BlogPostProps {
-  post: BlogPost;
+  post: BlogPostType;
   onEdit?: () => void;
   onDelete?: () => void;
   showAdminControls?: boolean;
@@ -22,11 +11,7 @@ interface BlogPostProps {
 
 const BlogPost: React.FC<BlogPostProps> = ({ post, onEdit, onDelete, showAdminControls = false }) => {
   const formatContent = (content: string) => {
-    console.log('formatContent - input:', content);
-    
-    // If content already has HTML tags, return as is
     if (content.includes('<p>') || content.includes('<h2>')) {
-      console.log('formatContent - already HTML, returning as is');
       return { __html: content };
     }
     
@@ -87,8 +72,6 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, onEdit, onDelete, showAdminCo
     }
     
     const htmlContent = htmlLines.join('\n');
-    console.log('formatContent - output:', htmlContent);
-    
     return { __html: htmlContent };
   };
 

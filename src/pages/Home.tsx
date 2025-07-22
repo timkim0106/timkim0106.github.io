@@ -25,7 +25,7 @@ const Home: React.FC = () => {
     {
       id: 2,
       title: "Race to Chall",
-      description: "RaceToChall is a competitive gaming platform for League of Legends that enables players to create and participate in skill-based races to climb the ranked ladder. I completely transformed a broken prototype with critical security vulnerabilities and 0% success rate into a production-ready application with modern architecture, enterprise-grade security, and real-time Riot Games API integration, achieving 100% feature functionality.",
+      description: "RaceToChall is a competitive gaming platform for League of Legends that enables players to create and participate in skill-based races to climb the ranked ladder. I completely transformed an inconsistent prototype with critical security vulnerabilities into a production-ready application with modern architecture, enterprise-grade security, and real-time Riot Games API integration, achieving 100% feature functionality.",
       technologies: ["Python", "SQL", "React", "TypeScript", "Vercel"],
       githubUrl: "https://github.com/timkim0106/RaceToChall"
     },
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
   ];
 
   const extraInfo = {
-    skills: ["Python", "C/C++", "TypeScript", "C#", "React", "Python", "YAML", "Node.js", "JavaScript", "SQL", "Git", "HTML/CSS"],
+    skills: ["Python", "C/C++", "TypeScript", "C#", "React", "YAML", "Node.js", "JavaScript", "SQL", "Git", "HTML/CSS"],
     hobbies: ["League of Legends", "Bouldering", "Hiking", "Traveling", "Trying New Food"],
     languages: ["English", "Korean"],
     leagueOfLegends: ["Peaked Rank 1 in 2022 and 2023", "Main role: Jungle", "Favorite champion: Elise"]
